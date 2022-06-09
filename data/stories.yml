@@ -1,0 +1,45 @@
+version: "2.0"
+
+stories:
+  - story: greet and then query
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: random_movie
+    - action: action_give_random_movies
+
+  - story: interactive_story_1
+    steps:
+    - intent: search_by_title
+      entities:
+      - movie_title: dune
+    - slot_was_set:
+      - movie_title: dune
+    - action: action_by_title_search
+
+  - story: interactive_story_2
+    steps:
+    - intent: search_by_genre
+      entities:
+      - movie_genre: Action
+    - slot_was_set:
+      - movie_genre: Action
+    - action: action_by_genre_search
+
+  - story: interactive_story_3
+    steps:
+    - intent: mark_watched
+    - action: action_mark_watched
+    - action: utter_rate
+    - intent: mark_rate
+      entities:
+      - movie_personal_rate: 10
+    - slot_was_set:
+      - movie_personal_rate: 10
+    - action: action_mark_rate
+    - action: utter_what_can_i_do
+
+
+
+    
+

@@ -1,0 +1,711 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - haloha
+- intent: goodbye
+  examples: |
+    - cu
+    - good bye
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: search_by_title
+  examples: |
+    - do you know a movie called [call me by your name](movie_title)?
+    - tell me more about [dune](movie_title)
+    - what's [ice age](movie_title) is about?
+    - tell me about [avatar](movie_title)
+    - is there a movie named [Dune](movie_title)?
+    - have you heard of [Dune](movie_title)
+    - tell me more about [The Lord of the Rings](movie_title)
+    - hey please find movie called [Jules and Jim](movie_title) thank you
+    - plz find video named [The Score](movie_title)
+    - hi please help me find film so called [Fatale](movie_title) thanks
+    - hi plz get me some video so called [Boundin'](movie_title)
+    - hi plz find video named [Alexander the Great](movie_title) thanks
+    - hi pls help me find movie called [Tales of Halloween](movie_title) thank you
+    - hi pls show me video named [Summer Days with Coo](movie_title) thanks
+    - hi please find film named [Worth](movie_title) thanks
+    - find video named [Goodbye Berlin](movie_title) thank you
+    - pls have you heard of video so called [Air Bud: Seventh Inning Fetch](movie_title) thank you
+    - hello do you know movie so called [Prom Night](movie_title) thank you
+    - hello please tell me about film called [One True Thing](movie_title) thanks
+    - hi please help me find film so called [Gotti](movie_title) thank you
+    - hey plz do you know film called [Monkey Business](movie_title) thank you
+    - hello pls find video called [Lassie](movie_title) thank you
+    - pls i'm looking for film called [The Mexican](movie_title)
+    - hi pls do you know video named [Cat People](movie_title) thanks
+    - hey pls do you know movie called [Down](movie_title) thank you
+    - plz show me movie called [Extreme Movie](movie_title)
+    - hello pls help me find video named [Jules and Jim](movie_title) thank you
+    - hello pls get me some movie called [Enforcement](movie_title)
+    - hi plz i'm looking for video so called [Cutie Honey](movie_title) thanks
+    - hey pls gime me film named [Vox Lux](movie_title) thank you
+    - i'm looking for video named [Tony Hawk: Until the Wheels Fall Off](movie_title) thanks
+    - plz do you know film named [Ted K](movie_title) thanks
+    - hi plz show me video named [Jade](movie_title) thanks
+    - plz show me film so called [The Head Hunter](movie_title)
+    - hey please do you know movie called [Sexy Movie](movie_title) thank you
+    - hello pls i'm looking for video called [Half Past Dead](movie_title) thanks
+    - hey pls i want some movie so called [Dutch](movie_title)
+    - hi please gime me film named [The Little Bather](movie_title)
+    - hey pls get me some video named [The Man Who Would Be King](movie_title)
+    - pls i want some film named [The Young and Prodigious T.S. Spivet](movie_title) thanks
+    - hello please show me movie so called [Naomi and Ely's No Kiss List](movie_title)
+    - plz gime me movie so called [Meru](movie_title) thank you
+    - hi show me film called [Buried Alive](movie_title) thanks
+    - please gime me movie so called [A Lonely Place to Die](movie_title) thank you
+    - hey pls gime me film called [Wolf Totem](movie_title) thanks
+    - hey pls tell me about film called [Alexander the Great](movie_title)
+    - hi please i want some video so called [Down](movie_title) thanks
+    - hello pls i'm looking for film called [Freaks 鈥?You're One of Us](movie_title) thanks
+    - hello pls tell me about movie named [Tony Hawk: Until the Wheels Fall Off](movie_title)
+    - hey please i'm looking for video called [Under Suspicion](movie_title)
+    - hi plz i'm looking for video named [TINA](movie_title) thanks
+    - hello plz i want some film named [Did You Hear About the Morgans?](movie_title) thank you
+    - hey pls do you know movie named [Winx Club: The Mystery of the Abyss](movie_title) thanks
+    - hey please i'm looking for video so called [The Rescuers Down Under](movie_title)
+    - hi get me some video so called [This Is It](movie_title)
+    - hello plz have you heard of film so called [A Lonely Place to Die](movie_title)
+    - hello get me some film named [TINA](movie_title)
+    - hi plz i'm looking for movie named [Sorry if I Love You](movie_title)
+    - plz tell me about film so called [Chickenhare and the Hamster of Darkness](movie_title)
+    - please get me some film named [Ashes in the Snow](movie_title) thank you
+    - hi i want some video called [Captain Blood](movie_title) thank you
+    - hi gime me film named [The Players](movie_title) thanks
+    - hey please i'm looking for video named [Lucky Luke](movie_title)
+    - hi give me some movie named [Buried Alive](movie_title) thank you
+    - get me some video called [Manou the Swift](movie_title)
+    - hi pls gime me film called [Lupin the 3rd](movie_title) thanks
+    - hey please gime me video named [The Vanishing](movie_title) thanks
+    - hello show me video so called [1900](movie_title) thank you
+    - hi pls help me find movie named [Night of the Demons](movie_title)
+    - pls give me some video named [Chickenhare and the Hamster of Darkness](movie_title) thanks
+    - plz have you heard of movie called [The Return](movie_title) thanks
+    - hi pls i want some video called [Wolf Totem](movie_title) thank you
+    - hello i want some video named [An Inconvenient Truth](movie_title) thank you
+    - hey give me some video so called [Blind](movie_title) thank you
+    - hi pls do you know movie named [The Quietude](movie_title) thanks
+    - have you heard of movie called [Nostalgia](movie_title) thank you
+    - plz tell me about movie named [Columbus](movie_title) thank you
+    - hey plz help me find film so called [Winx Club: The Mystery of the Abyss](movie_title) thank you
+    - hello get me some movie called [Winter in Wartime](movie_title) thank you
+    - hey pls do you know film called [The Rescuers Down Under](movie_title)
+    - hello please have you heard of movie named [The Man Who Would Be King](movie_title) thank you
+    - hello please find film so called [Lottery Ticket](movie_title) thanks
+    - plz show me video named [In & Out](movie_title) thank you
+    - hi pls have you heard of movie called [Stay](movie_title) thank you
+    - hey please i want some film so called [My Love, My Bride](movie_title) thank you
+    - hey plz gime me movie named [Doraemon: Nobita's New Dinosaur](movie_title)
+    - please find movie named [Life or Something Like It](movie_title) thanks
+    - hello please i'm looking for movie named [Dil To Pagal Hai](movie_title) thanks
+    - hi plz i want some movie so called [Accidental Love](movie_title)
+    - hello pls give me some video so called [Trumbo](movie_title) thank you
+    - hi get me some film so called [Boundin'](movie_title) thanks
+    - hi please find film called [Ashes in the Snow](movie_title)
+    - hey please help me find film so called [In Secret](movie_title) thanks
+    - please i'm looking for video so called [One Night at McCool's](movie_title) thank you
+    - hi plz show me video named [The New King of Comedy](movie_title)
+    - hi help me find video so called [Gotti](movie_title) thanks
+    - hello pls i'm looking for movie named [The Deaths of Ian Stone](movie_title) thanks
+    - hi pls give me some video named [Daddy Long Legs](movie_title) thank you
+    - hi pls have you heard of video named [Asterix vs. Caesar](movie_title)
+    - hello please find film named [The Conquest of Siberia](movie_title)
+    - hello plz tell me about video named [The Little Bather](movie_title)
+    - pls i'm looking for film named [Lavender](movie_title) thanks
+    - please give me some video named [The Mimic](movie_title) thanks
+    - do you know video so called [Extreme Movie](movie_title)
+    - hey pls i want some film named [The Immortal Life of Henrietta Lacks](movie_title) thank you
+    - hi pls have you heard of film called [Maurice](movie_title)
+    - hey please find movie called [The D Train](movie_title) thank you
+    - please i'm looking for movie called [The Stepfather](movie_title)
+    - hey please help me find movie so called [Clouds of Sils Maria](movie_title)
+    - hi pls give me some film so called [Up to You](movie_title) thanks
+    - hi pls gime me video named [Enforcement](movie_title) thanks
+    - hello give me some video called [Red Sun](movie_title) thank you
+    - do you know movie called [The Rescuers Down Under](movie_title) thank you
+    - pls tell me about video so called [Populaire](movie_title)
+    - hey please have you heard of film called [I Want You](movie_title)
+    - hey please get me some movie named [Inland Empire](movie_title) thank you
+    - hello pls do you know video called [Sexy Movie](movie_title) thank you
+    - hey pls show me movie named [I Want You](movie_title)
+    - hi show me movie named [The Hitcher](movie_title) thanks
+    - hi pls show me film so called [Let the Right One In](movie_title) thanks
+    - plz show me movie so called [Belle and Sebastian](movie_title) thank you
+    - hey pls i want some film so called [Outpost](movie_title) thank you
+    - hey plz i want some movie named [Airheads](movie_title)
+    - hey please have you heard of video so called [People Like Us](movie_title) thanks
+    - hey please do you know movie so called [The Best Little Whorehouse in Texas](movie_title)
+    - hello pls tell me about movie called [Down](movie_title)
+    - hello please get me some video named [Viva l'Italia](movie_title)
+    - hi please give me some movie so called [An Inconvenient Truth](movie_title) thank you
+    - hi i'm looking for film called [Cold Creek Manor](movie_title) thanks
+    - hi tell me about video so called [Appointment with Death](movie_title) thank you
+    - hi plz give me some movie named [Doraemon: Nobita's New Dinosaur](movie_title) thanks
+    - hey pls gime me video named [School Dance](movie_title)
+    - hey pls give me some movie so called [The Heiress](movie_title) thanks
+    - hello plz gime me video called [The Vanishing](movie_title)
+    - hey plz gime me video called [Captain Blood](movie_title) thanks
+    - hi i want some film called [Winter in Wartime](movie_title) thanks
+    - hey pls give me some video called [The Stepfather](movie_title) thanks
+    - hey plz get me some movie so called [Tart](movie_title) thanks
+    - hi please help me find video so called [Enforcement](movie_title)
+    - hey do you know video so called [Breakfast on Pluto](movie_title) thank you
+    - hey show me movie named [The Express](movie_title) thank you
+    - hey plz show me movie so called [On a Magical Night](movie_title) thanks
+    - plz help me find movie named [The New King of Comedy](movie_title) thanks
+    - hey pls show me video called [Frost/Nixon](movie_title) thank you
+    - pls show me film named [Sorry to Bother You](movie_title) thank you
+    - find film named [Housesitter](movie_title)
+    - hi plz find film called [The Young and Prodigious T.S. Spivet](movie_title) thanks
+    - pls i'm looking for video so called [The Stepfather](movie_title) thank you
+    - tell me about film called [Dad's Army](movie_title) thanks
+    - hello plz give me some video named [An Inconvenient Truth](movie_title)
+    - hello please help me find film named [Something to Talk About](movie_title) thank you
+    - hello plz gime me film named [Warriors of the Rainbow: Seediq Bale - Part 2: The Rainbow Bridge](movie_title) thank you
+    - hello give me some video so called [Niko & the Way to the Stars](movie_title) thank you
+    - hello i want some video named [Pooka!](movie_title)
+    - pls get me some movie named [Crown Vic](movie_title) thank you
+    - hi give me some movie so called [Niko & the Way to the Stars](movie_title) thank you
+    - hello please i want some film named [Down](movie_title)
+    - plz help me find film called [Hustle & Flow](movie_title) thanks
+    - hi do you know movie called [God, Sex and Truth](movie_title) thanks
+    - hi plz gime me film named [Freaks 鈥?You're One of Us](movie_title)
+    - hello show me video named [Evita](movie_title) thank you
+    - hello tell me about video named [Faust](movie_title)
+    - please find video so called [Ashby](movie_title) thanks
+    - hello show me video so called [People Like Us](movie_title) thank you
+    - hi plz have you heard of movie named [Arsenal](movie_title) thanks
+    - hello please do you know movie named [The Little Bather](movie_title)
+    - do you know movie called [Frost/Nixon](movie_title) thank you
+    - help me find video called [Buried Alive](movie_title) thank you
+    - hey plz tell me about movie named [The Island of Dr. Moreau](movie_title) thanks
+    - hello please have you heard of movie called [Breakfast on Pluto](movie_title) thanks
+    - pls help me find video so called [The Heiress](movie_title)
+    - plz find video so called [Manou the Swift](movie_title) thank you
+    - hey pls help me find film named [Appointment with Death](movie_title) thank you
+    - hi tell me about video named [The Head Hunter](movie_title) thanks
+    - hello tell me about film named [Warriors of the Rainbow: Seediq Bale - Part 2: The Rainbow Bridge](movie_title) thanks
+    - hi pls give me some video called [Populaire](movie_title) thank you
+    - hi plz find movie called [Body of Lies](movie_title) thanks
+    - hey pls i'm looking for movie called [Table 19](movie_title) thanks
+    - hello do you know video so called [Glory Road](movie_title)
+    - hey please gime me film called [The Family Stone](movie_title) thank you
+    - gime me movie named [Life Like](movie_title) thank you
+    - hello pls i want some movie so called [Appointment with Death](movie_title) thanks
+    - hello please have you heard of film so called [On a Magical Night](movie_title)
+    - hey please get me some film so called [Outpost](movie_title) thank you
+    - pls i'm looking for film called [The Mexican](movie_title) thanks
+    - hey pls give me some video named [Class of 1984](movie_title) thanks
+    - i'm looking for film named [Monkey Business](movie_title) thanks
+    - hello pls give me some movie named [A Moment of Romance](movie_title) thank you
+    - hi pls tell me about movie so called [Dil To Pagal Hai](movie_title)
+    - i'm looking for movie so called [If Beale Street Could Talk](movie_title) thank you
+    - help me find video so called [One True Thing](movie_title) thanks
+    - hello get me some movie so called [Body of Lies](movie_title) thanks
+    - hello i'm looking for film called [Alexander the Great](movie_title) thank you
+    - hello pls have you heard of film named [Bagdad Cafe](movie_title) thanks
+    - hello gime me movie so called [For the Love of Spock](movie_title)
+    - hello pls give me some movie named [Foolproof](movie_title)
+    - hi find video so called [Populaire](movie_title)
+    - please help me find video called [The Conquest of Siberia](movie_title) thanks
+    - hi please get me some film named [The Young and Prodigious T.S. Spivet](movie_title)
+    - hi pls help me find movie called [Black Candles](movie_title)
+    - please i'm looking for film named [The Stepfather](movie_title)
+    - hi have you heard of movie called [Lean On Me](movie_title)
+    - hello please do you know movie so called [The Valet](movie_title)
+    - help me find film called [Naomi and Ely's No Kiss List](movie_title)
+    - hello pls have you heard of movie named [Dark Light](movie_title)
+    - hi pls i want some movie called [Captain Blood](movie_title) thanks
+    - hi i want some video named [The Fortune Cookie](movie_title) thanks
+    - hi plz get me some film named [Minutemen](movie_title)
+    - hey plz i'm looking for video so called [Airheads](movie_title) thanks
+    - hello pls get me some movie called [Black '47](movie_title) thanks
+    - hello plz gime me movie called [People Like Us](movie_title) thanks
+    - hey plz i want some movie named [Bad Johnson](movie_title) thank you
+    - please i'm looking for video so called [Hustle & Flow](movie_title) thank you
+    - show me film called [Go for It](movie_title) thanks
+    - pls do you know video called [Glory Road](movie_title) thanks
+    - hey plz i'm looking for movie called [Dark Light](movie_title)
+    - hello plz show me video named [Class of 1984](movie_title) thank you
+    - pls do you know video called [Lottery Ticket](movie_title) thank you
+    - hey plz have you heard of movie so called [Meru](movie_title) thanks
+    - hey pls tell me about movie named [School Dance](movie_title) thanks
+    - hi plz gime me film so called [XOXO](movie_title) thanks
+    - hey plz tell me about movie so called [Lottery Ticket](movie_title) thanks
+    - hey find film named [Mosul](movie_title) thanks
+    - hey pls i want some video named [Winx Club: The Mystery of the Abyss](movie_title) thank you
+    - hello pls have you heard of movie named [High School of the Dead: Drifters of the Dead](movie_title) thank you
+    - hello please i'm looking for film named [Black '47](movie_title) thank you
+    - hello get me some movie so called [Minutemen](movie_title) thank you
+    - hello find video called [Take Shelter](movie_title) thanks
+    - hey pls give me some movie called [Evita](movie_title) thank you
+    - hey pls help me find film called [Angelique](movie_title)
+    - hello please tell me about movie called [No One Lives](movie_title) thanks
+    - hey please give me some video so called [Katyn](movie_title) thank you
+    - hey please give me some film named [Accidental Love](movie_title)
+    - hi pls help me find video named [Prom Night](movie_title) thanks
+    - pls do you know movie named [Something to Talk About](movie_title) thanks
+    - hey i want some video called [Wolf Totem](movie_title) thanks
+    - hello please do you know video called [Diamantino](movie_title)
+    - hey plz show me video so called [The Family Stone](movie_title) thanks
+    - hey plz give me some film so called [For the Love of Spock](movie_title) thank you
+    - hi help me find video called [Hustle & Flow](movie_title) thanks
+    - hi show me movie named [The Haunted World of El Superbeasto](movie_title) thanks
+    - get me some movie so called [Foolproof](movie_title) thank you
+    - show me movie named [Cold Creek Manor](movie_title) thank you
+    - gime me movie called [An Inconvenient Truth](movie_title) thanks
+    - hello plz show me film named [The Immortal Life of Henrietta Lacks](movie_title) thanks
+    - pls gime me movie so called [Saints and Soldiers: Airborne Creed](movie_title)
+    - hello gime me film called [In Secret](movie_title)
+    - hey please get me some video named [Crossfire](movie_title) thanks
+    - pls find video so called [4Got10](movie_title) thanks
+    - hello plz gime me video so called [Winx Club: The Mystery of the Abyss](movie_title) thank you
+    - hi pls show me film so called [Did You Hear About the Morgans?](movie_title) thanks
+    - hello pls have you heard of video called [Laid to Rest](movie_title) thank you
+    - hello pls help me find film called [Under Suspicion](movie_title) thank you
+    - please i want some film called [Naomi and Ely's No Kiss List](movie_title)
+    - hello plz do you know video so called [The Immortal Life of Henrietta Lacks](movie_title)
+    - plz gime me movie named [Table 19](movie_title)
+    - hello pls i want some video named [The Great Raid](movie_title)
+    - hello please tell me about movie named [The New King of Comedy](movie_title) thank you
+    - hey please help me find movie named [Summer Days with Coo](movie_title)
+    - gime me film so called [Prom Night](movie_title) thank you
+    - hello have you heard of video called [Faust](movie_title)
+    - hey pls tell me about video called [The Best Little Whorehouse in Texas](movie_title) thank you
+    - pls get me some film so called [The New King of Comedy](movie_title)
+    - hello pls give me some film called [The Ark](movie_title) thanks
+    - hi tell me about video called [Buried Alive](movie_title) thanks
+    - hello please i'm looking for video named [The Devil's Backbone](movie_title) thanks
+    - hi pls gime me film called [Daddy Long Legs](movie_title)
+    - hi help me find film called [The Express](movie_title) thank you
+    - hi pls i want some video named [The Soloist](movie_title) thanks
+    - pls tell me about film called [Jade](movie_title) thank you
+    - hey give me some video so called [The Reef](movie_title) thank you
+    - hi please gime me video so called [The Hitcher](movie_title) thank you
+    - hey find video named [Sexy Movie](movie_title) thanks
+    - hi please i'm looking for film named [Elizabeth Harvest](movie_title) thanks
+    - hello plz get me some film called [The Man Who Would Be King](movie_title)
+    - hey plz gime me film called [The Midnight Meat Train](movie_title)
+    - plz have you heard of film so called [Inland Empire](movie_title)
+    - hello pls i'm looking for film called [Hedgehog in the Fog](movie_title) thank you
+    - hey show me film called [The Libertine](movie_title) thank you
+    - hi pls give me some movie named [Inland Empire](movie_title) thank you
+    - hello pls gime me film called [Arsenal](movie_title) thank you
+    - hello pls i'm looking for film called [The Vanishing](movie_title) thanks
+    - hi please show me film so called [Foolproof](movie_title) thank you
+    - hey pls do you know movie called [Reds](movie_title) thank you
+    - hello do you know film called [The Express](movie_title)
+    - hello plz give me some video called [The New King of Comedy](movie_title)
+    - pls give me some movie called [Coda](movie_title)
+    - hi please get me some film called [Ted K](movie_title) thanks
+    - hey i want some video so called [Buried Alive](movie_title)
+    - hello tell me about video named [The Heiress](movie_title) thank you
+    - hi plz get me some film called [The ABCs of Death](movie_title) thanks
+    - plz give me some video called [The Gruffalo](movie_title) thanks
+    - hello please i want some movie named [Wolf Totem](movie_title) thank you
+    - please gime me movie named [Haute Cuisine](movie_title) thanks
+    - hello pls tell me about video named [Clouds of Sils Maria](movie_title) thanks
+    - hi do you know film so called [Michel Vaillant](movie_title)
+    - hello plz gime me video so called [Faust](movie_title) thank you
+    - hello pls find video so called [Diamantino](movie_title) thank you
+    - hello tell me about video so called [Dutch](movie_title)
+    - please i'm looking for movie called [Hustle & Flow](movie_title) thank you
+    - hi please get me some movie so called [Jade](movie_title) thank you
+    - please gime me movie named [Tin Toy](movie_title)
+    - pls get me some film so called [Iceman](movie_title) thanks
+    - hello please help me find film named [The Man Who Would Be King](movie_title) thank you
+    - hey please show me film named [Black Sunday](movie_title) thanks
+    - hi please tell me about film called [One Night at McCool's](movie_title) thanks
+    - hey help me find movie so called [Diamantino](movie_title)
+    
+
+
+- intent: search_by_genre
+  examples: |
+    - get me some [action](movie_genre) movies.
+    - I want to see some [comedies](movie_genre)
+    - give me some [horror](movie_genre) movies
+    - get me some [horror](movie_genre) movies
+    - hey please find movie called [Jules and Jim](movie_title) thank you
+    - plz find video named [The Score](movie_title)
+    - hi please help me find film so called [Fatale](movie_title) thanks
+    - hi plz get me some video so called [Boundin'](movie_title)
+    - hi plz find video named [Alexander the Great](movie_title) thanks
+    - hi pls help me find movie called [Tales of Halloween](movie_title) thank you
+    - hi pls show me video named [Summer Days with Coo](movie_title) thanks
+    - hi please find film named [Worth](movie_title) thanks
+    - find video named [Goodbye Berlin](movie_title) thank you
+    - pls have you heard of video so called [Air Bud: Seventh Inning Fetch](movie_title) thank you
+    - hello do you know movie so called [Prom Night](movie_title) thank you
+    - hello please tell me about film called [One True Thing](movie_title) thanks
+    - hi please help me find film so called [Gotti](movie_title) thank you
+    - hey plz do you know film called [Monkey Business](movie_title) thank you
+    - hello pls find video called [Lassie](movie_title) thank you
+    - pls i'm looking for film called [The Mexican](movie_title)
+    - hi pls do you know video named [Cat People](movie_title) thanks
+    - hey pls do you know movie called [Down](movie_title) thank you
+    - plz show me movie called [Extreme Movie](movie_title)
+    - hello pls help me find video named [Jules and Jim](movie_title) thank you
+    - hello pls get me some movie called [Enforcement](movie_title)
+    - hi plz i'm looking for video so called [Cutie Honey](movie_title) thanks
+    - hey pls gime me film named [Vox Lux](movie_title) thank you
+    - i'm looking for video named [Tony Hawk: Until the Wheels Fall Off](movie_title) thanks
+    - plz do you know film named [Ted K](movie_title) thanks
+    - hi plz show me video named [Jade](movie_title) thanks
+    - plz show me film so called [The Head Hunter](movie_title)
+    - hey please do you know movie called [Sexy Movie](movie_title) thank you
+    - hello pls i'm looking for video called [Half Past Dead](movie_title) thanks
+    - hey pls i want some movie so called [Dutch](movie_title)
+    - hi please gime me film named [The Little Bather](movie_title)
+    - hey pls get me some video named [The Man Who Would Be King](movie_title)
+    - pls i want some film named [The Young and Prodigious T.S. Spivet](movie_title) thanks
+    - hello please show me movie so called [Naomi and Ely's No Kiss List](movie_title)
+    - plz gime me movie so called [Meru](movie_title) thank you
+    - hi show me film called [Buried Alive](movie_title) thanks
+    - please gime me movie so called [A Lonely Place to Die](movie_title) thank you
+    - hey pls gime me film called [Wolf Totem](movie_title) thanks
+    - hey pls tell me about film called [Alexander the Great](movie_title)
+    - hi please i want some video so called [Down](movie_title) thanks
+    - hello pls i'm looking for film called [Freaks 鈥?You're One of Us](movie_title) thanks
+    - hello pls tell me about movie named [Tony Hawk: Until the Wheels Fall Off](movie_title)
+    - hey please i'm looking for video called [Under Suspicion](movie_title)
+    - hi plz i'm looking for video named [TINA](movie_title) thanks
+    - hello plz i want some film named [Did You Hear About the Morgans?](movie_title) thank you
+    - hey pls do you know movie named [Winx Club: The Mystery of the Abyss](movie_title) thanks
+    - hey please i'm looking for video so called [The Rescuers Down Under](movie_title)
+    - hi get me some video so called [This Is It](movie_title)
+    - hello plz have you heard of film so called [A Lonely Place to Die](movie_title)
+    - hello get me some film named [TINA](movie_title)
+    - hi plz i'm looking for movie named [Sorry if I Love You](movie_title)
+    - plz tell me about film so called [Chickenhare and the Hamster of Darkness](movie_title)
+    - please get me some film named [Ashes in the Snow](movie_title) thank you
+    - hi i want some video called [Captain Blood](movie_title) thank you
+    - hi gime me film named [The Players](movie_title) thanks
+    - hey please i'm looking for video named [Lucky Luke](movie_title)
+    - hi give me some movie named [Buried Alive](movie_title) thank you
+    - get me some video called [Manou the Swift](movie_title)
+    - hi pls gime me film called [Lupin the 3rd](movie_title) thanks
+    - hey please gime me video named [The Vanishing](movie_title) thanks
+    - hello show me video so called [1900](movie_title) thank you
+    - hi pls help me find movie named [Night of the Demons](movie_title)
+    - pls give me some video named [Chickenhare and the Hamster of Darkness](movie_title) thanks
+    - plz have you heard of movie called [The Return](movie_title) thanks
+    - hi pls i want some video called [Wolf Totem](movie_title) thank you
+    - hello i want some video named [An Inconvenient Truth](movie_title) thank you
+    - hey give me some video so called [Blind](movie_title) thank you
+    - hi pls do you know movie named [The Quietude](movie_title) thanks
+    - have you heard of movie called [Nostalgia](movie_title) thank you
+    - plz tell me about movie named [Columbus](movie_title) thank you
+    - hey plz help me find film so called [Winx Club: The Mystery of the Abyss](movie_title) thank you
+    - hello get me some movie called [Winter in Wartime](movie_title) thank you
+    - hey pls do you know film called [The Rescuers Down Under](movie_title)
+    - hello please have you heard of movie named [The Man Who Would Be King](movie_title) thank you
+    - hello please find film so called [Lottery Ticket](movie_title) thanks
+    - plz show me video named [In & Out](movie_title) thank you
+    - hi pls have you heard of movie called [Stay](movie_title) thank you
+    - hey please i want some film so called [My Love, My Bride](movie_title) thank you
+    - hey plz gime me movie named [Doraemon: Nobita's New Dinosaur](movie_title)
+    - please find movie named [Life or Something Like It](movie_title) thanks
+    - hello please i'm looking for movie named [Dil To Pagal Hai](movie_title) thanks
+    - hi plz i want some movie so called [Accidental Love](movie_title)
+    - hello pls give me some video so called [Trumbo](movie_title) thank you
+    - hi get me some film so called [Boundin'](movie_title) thanks
+    - hi please find film called [Ashes in the Snow](movie_title)
+    - hey please help me find film so called [In Secret](movie_title) thanks
+    - please i'm looking for video so called [One Night at McCool's](movie_title) thank you
+    - hi plz show me video named [The New King of Comedy](movie_title)
+    - hi help me find video so called [Gotti](movie_title) thanks
+    - hello pls i'm looking for movie named [The Deaths of Ian Stone](movie_title) thanks
+    - hi pls give me some video named [Daddy Long Legs](movie_title) thank you
+    - hi pls have you heard of video named [Asterix vs. Caesar](movie_title)
+    - hello please find film named [The Conquest of Siberia](movie_title)
+    - hello plz tell me about video named [The Little Bather](movie_title)
+    - pls i'm looking for film named [Lavender](movie_title) thanks
+    - please give me some video named [The Mimic](movie_title) thanks
+    - do you know video so called [Extreme Movie](movie_title)
+    - hey pls i want some film named [The Immortal Life of Henrietta Lacks](movie_title) thank you
+    - hi pls have you heard of film called [Maurice](movie_title)
+    - hey please find movie called [The D Train](movie_title) thank you
+    - please i'm looking for movie called [The Stepfather](movie_title)
+    - hey please help me find movie so called [Clouds of Sils Maria](movie_title)
+    - hi pls give me some film so called [Up to You](movie_title) thanks
+    - hi pls gime me video named [Enforcement](movie_title) thanks
+    - hello give me some video called [Red Sun](movie_title) thank you
+    - do you know movie called [The Rescuers Down Under](movie_title) thank you
+    - pls tell me about video so called [Populaire](movie_title)
+    - hey please have you heard of film called [I Want You](movie_title)
+    - hey please get me some movie named [Inland Empire](movie_title) thank you
+    - hello pls do you know video called [Sexy Movie](movie_title) thank you
+    - hey pls show me movie named [I Want You](movie_title)
+    - hi show me movie named [The Hitcher](movie_title) thanks
+    - hi pls show me film so called [Let the Right One In](movie_title) thanks
+    - plz show me movie so called [Belle and Sebastian](movie_title) thank you
+    - hey pls i want some film so called [Outpost](movie_title) thank you
+    - hey plz i want some movie named [Airheads](movie_title)
+    - hey please have you heard of video so called [People Like Us](movie_title) thanks
+    - hey please do you know movie so called [The Best Little Whorehouse in Texas](movie_title)
+    - hello pls tell me about movie called [Down](movie_title)
+    - hello please get me some video named [Viva l'Italia](movie_title)
+    - hi please give me some movie so called [An Inconvenient Truth](movie_title) thank you
+    - hi i'm looking for film called [Cold Creek Manor](movie_title) thanks
+    - hi tell me about video so called [Appointment with Death](movie_title) thank you
+    - hi plz give me some movie named [Doraemon: Nobita's New Dinosaur](movie_title) thanks
+    - hey pls gime me video named [School Dance](movie_title)
+    - hey pls give me some movie so called [The Heiress](movie_title) thanks
+    - hello plz gime me video called [The Vanishing](movie_title)
+    - hey plz gime me video called [Captain Blood](movie_title) thanks
+    - hi i want some film called [Winter in Wartime](movie_title) thanks
+    - hey pls give me some video called [The Stepfather](movie_title) thanks
+    - hey plz get me some movie so called [Tart](movie_title) thanks
+    - hi please help me find video so called [Enforcement](movie_title)
+    - hey do you know video so called [Breakfast on Pluto](movie_title) thank you
+    - hey show me movie named [The Express](movie_title) thank you
+    - hey plz show me movie so called [On a Magical Night](movie_title) thanks
+    - plz help me find movie named [The New King of Comedy](movie_title) thanks
+    - hey pls show me video called [Frost/Nixon](movie_title) thank you
+    - pls show me film named [Sorry to Bother You](movie_title) thank you
+    - find film named [Housesitter](movie_title)
+    - hi plz find film called [The Young and Prodigious T.S. Spivet](movie_title) thanks
+    - pls i'm looking for video so called [The Stepfather](movie_title) thank you
+    - tell me about film called [Dad's Army](movie_title) thanks
+    - hello plz give me some video named [An Inconvenient Truth](movie_title)
+    - hello please help me find film named [Something to Talk About](movie_title) thank you
+    - hello plz gime me film named [Warriors of the Rainbow: Seediq Bale - Part 2: The Rainbow Bridge](movie_title) thank you
+    - hello give me some video so called [Niko & the Way to the Stars](movie_title) thank you
+    - hello i want some video named [Pooka!](movie_title)
+    - pls get me some movie named [Crown Vic](movie_title) thank you
+    - hi give me some movie so called [Niko & the Way to the Stars](movie_title) thank you
+    - hello please i want some film named [Down](movie_title)
+    - plz help me find film called [Hustle & Flow](movie_title) thanks
+    - hi do you know movie called [God, Sex and Truth](movie_title) thanks
+    - hi plz gime me film named [Freaks 鈥?You're One of Us](movie_title)
+    - hello show me video named [Evita](movie_title) thank you
+    - hello tell me about video named [Faust](movie_title)
+    - please find video so called [Ashby](movie_title) thanks
+    - hello show me video so called [People Like Us](movie_title) thank you
+    - hi plz have you heard of movie named [Arsenal](movie_title) thanks
+    - hello please do you know movie named [The Little Bather](movie_title)
+    - do you know movie called [Frost/Nixon](movie_title) thank you
+    - help me find video called [Buried Alive](movie_title) thank you
+    - hey plz tell me about movie named [The Island of Dr. Moreau](movie_title) thanks
+    - hello please have you heard of movie called [Breakfast on Pluto](movie_title) thanks
+    - pls help me find video so called [The Heiress](movie_title)
+    - plz find video so called [Manou the Swift](movie_title) thank you
+    - hey pls help me find film named [Appointment with Death](movie_title) thank you
+    - hi tell me about video named [The Head Hunter](movie_title) thanks
+    - hello tell me about film named [Warriors of the Rainbow: Seediq Bale - Part 2: The Rainbow Bridge](movie_title) thanks
+    - hi pls give me some video called [Populaire](movie_title) thank you
+    - hi plz find movie called [Body of Lies](movie_title) thanks
+    - hey pls i'm looking for movie called [Table 19](movie_title) thanks
+    - hello do you know video so called [Glory Road](movie_title)
+    - hey please gime me film called [The Family Stone](movie_title) thank you
+    - gime me movie named [Life Like](movie_title) thank you
+    - hello pls i want some movie so called [Appointment with Death](movie_title) thanks
+    - hello please have you heard of film so called [On a Magical Night](movie_title)
+    - hey please get me some film so called [Outpost](movie_title) thank you
+    - pls i'm looking for film called [The Mexican](movie_title) thanks
+    - hey pls give me some video named [Class of 1984](movie_title) thanks
+    - i'm looking for film named [Monkey Business](movie_title) thanks
+    - hello pls give me some movie named [A Moment of Romance](movie_title) thank you
+    - hi pls tell me about movie so called [Dil To Pagal Hai](movie_title)
+    - i'm looking for movie so called [If Beale Street Could Talk](movie_title) thank you
+    - help me find video so called [One True Thing](movie_title) thanks
+    - hello get me some movie so called [Body of Lies](movie_title) thanks
+    - hello i'm looking for film called [Alexander the Great](movie_title) thank you
+    - hello pls have you heard of film named [Bagdad Cafe](movie_title) thanks
+    - hello gime me movie so called [For the Love of Spock](movie_title)
+    - hello pls give me some movie named [Foolproof](movie_title)
+    - hi find video so called [Populaire](movie_title)
+    - please help me find video called [The Conquest of Siberia](movie_title) thanks
+    - hi please get me some film named [The Young and Prodigious T.S. Spivet](movie_title)
+    - hi pls help me find movie called [Black Candles](movie_title)
+    - please i'm looking for film named [The Stepfather](movie_title)
+    - hi have you heard of movie called [Lean On Me](movie_title)
+    - hello please do you know movie so called [The Valet](movie_title)
+    - help me find film called [Naomi and Ely's No Kiss List](movie_title)
+    - hello pls have you heard of movie named [Dark Light](movie_title)
+    - hi pls i want some movie called [Captain Blood](movie_title) thanks
+    - hi i want some video named [The Fortune Cookie](movie_title) thanks
+    - hi plz get me some film named [Minutemen](movie_title)
+    - hey plz i'm looking for video so called [Airheads](movie_title) thanks
+    - hello pls get me some movie called [Black '47](movie_title) thanks
+    - hello plz gime me movie called [People Like Us](movie_title) thanks
+    - hey plz i want some movie named [Bad Johnson](movie_title) thank you
+    - please i'm looking for video so called [Hustle & Flow](movie_title) thank you
+    - show me film called [Go for It](movie_title) thanks
+    - pls do you know video called [Glory Road](movie_title) thanks
+    - hey plz i'm looking for movie called [Dark Light](movie_title)
+    - hello plz show me video named [Class of 1984](movie_title) thank you
+    - pls do you know video called [Lottery Ticket](movie_title) thank you
+    - hey plz have you heard of movie so called [Meru](movie_title) thanks
+    - hey pls tell me about movie named [School Dance](movie_title) thanks
+    - hi plz gime me film so called [XOXO](movie_title) thanks
+    - hey plz tell me about movie so called [Lottery Ticket](movie_title) thanks
+    - hey find film named [Mosul](movie_title) thanks
+    - hey pls i want some video named [Winx Club: The Mystery of the Abyss](movie_title) thank you
+    - hello pls have you heard of movie named [High School of the Dead: Drifters of the Dead](movie_title) thank you
+    - hello please i'm looking for film named [Black '47](movie_title) thank you
+    - hello get me some movie so called [Minutemen](movie_title) thank you
+    - hello find video called [Take Shelter](movie_title) thanks
+    - hey pls give me some movie called [Evita](movie_title) thank you
+    - hey pls help me find film called [Angelique](movie_title)
+    - hello please tell me about movie called [No One Lives](movie_title) thanks
+    - hey please give me some video so called [Katyn](movie_title) thank you
+    - hey please give me some film named [Accidental Love](movie_title)
+    - hi pls help me find video named [Prom Night](movie_title) thanks
+    - pls do you know movie named [Something to Talk About](movie_title) thanks
+    - hey i want some video called [Wolf Totem](movie_title) thanks
+    - hello please do you know video called [Diamantino](movie_title)
+    - hey plz show me video so called [The Family Stone](movie_title) thanks
+    - hey plz give me some film so called [For the Love of Spock](movie_title) thank you
+    - hi help me find video called [Hustle & Flow](movie_title) thanks
+    - hi show me movie named [The Haunted World of El Superbeasto](movie_title) thanks
+    - get me some movie so called [Foolproof](movie_title) thank you
+    - show me movie named [Cold Creek Manor](movie_title) thank you
+    - gime me movie called [An Inconvenient Truth](movie_title) thanks
+    - hello plz show me film named [The Immortal Life of Henrietta Lacks](movie_title) thanks
+    - pls gime me movie so called [Saints and Soldiers: Airborne Creed](movie_title)
+    - hello gime me film called [In Secret](movie_title)
+    - hey please get me some video named [Crossfire](movie_title) thanks
+    - pls find video so called [4Got10](movie_title) thanks
+    - hello plz gime me video so called [Winx Club: The Mystery of the Abyss](movie_title) thank you
+    - hi pls show me film so called [Did You Hear About the Morgans?](movie_title) thanks
+    - hello pls have you heard of video called [Laid to Rest](movie_title) thank you
+    - hello pls help me find film called [Under Suspicion](movie_title) thank you
+    - please i want some film called [Naomi and Ely's No Kiss List](movie_title)
+    - hello plz do you know video so called [The Immortal Life of Henrietta Lacks](movie_title)
+    - plz gime me movie named [Table 19](movie_title)
+    - hello pls i want some video named [The Great Raid](movie_title)
+    - hello please tell me about movie named [The New King of Comedy](movie_title) thank you
+    - hey please help me find movie named [Summer Days with Coo](movie_title)
+    - gime me film so called [Prom Night](movie_title) thank you
+    - hello have you heard of video called [Faust](movie_title)
+    - hey pls tell me about video called [The Best Little Whorehouse in Texas](movie_title) thank you
+    - pls get me some film so called [The New King of Comedy](movie_title)
+    - hello pls give me some film called [The Ark](movie_title) thanks
+    - hi tell me about video called [Buried Alive](movie_title) thanks
+    - hello please i'm looking for video named [The Devil's Backbone](movie_title) thanks
+    - hi pls gime me film called [Daddy Long Legs](movie_title)
+    - hi help me find film called [The Express](movie_title) thank you
+    - hi pls i want some video named [The Soloist](movie_title) thanks
+    - pls tell me about film called [Jade](movie_title) thank you
+    - hey give me some video so called [The Reef](movie_title) thank you
+    - hi please gime me video so called [The Hitcher](movie_title) thank you
+    - hey find video named [Sexy Movie](movie_title) thanks
+    - hi please i'm looking for film named [Elizabeth Harvest](movie_title) thanks
+    - hello plz get me some film called [The Man Who Would Be King](movie_title)
+    - hey plz gime me film called [The Midnight Meat Train](movie_title)
+    - plz have you heard of film so called [Inland Empire](movie_title)
+    - hello pls i'm looking for film called [Hedgehog in the Fog](movie_title) thank you
+    - hey show me film called [The Libertine](movie_title) thank you
+    - hi pls give me some movie named [Inland Empire](movie_title) thank you
+    - hello pls gime me film called [Arsenal](movie_title) thank you
+    - hello pls i'm looking for film called [The Vanishing](movie_title) thanks
+    - hi please show me film so called [Foolproof](movie_title) thank you
+    - hey pls do you know movie called [Reds](movie_title) thank you
+    - hello do you know film called [The Express](movie_title)
+    - hello plz give me some video called [The New King of Comedy](movie_title)
+    - pls give me some movie called [Coda](movie_title)
+    - hi please get me some film called [Ted K](movie_title) thanks
+    - hey i want some video so called [Buried Alive](movie_title)
+    - hello tell me about video named [The Heiress](movie_title) thank you
+    - hi plz get me some film called [The ABCs of Death](movie_title) thanks
+    - plz give me some video called [The Gruffalo](movie_title) thanks
+    - hello please i want some movie named [Wolf Totem](movie_title) thank you
+    - please gime me movie named [Haute Cuisine](movie_title) thanks
+    - hello pls tell me about video named [Clouds of Sils Maria](movie_title) thanks
+    - hi do you know film so called [Michel Vaillant](movie_title)
+    - hello plz gime me video so called [Faust](movie_title) thank you
+    - hello pls find video so called [Diamantino](movie_title) thank you
+    - hello tell me about video so called [Dutch](movie_title)
+    - please i'm looking for movie called [Hustle & Flow](movie_title) thank you
+    - hi please get me some movie so called [Jade](movie_title) thank you
+    - please gime me movie named [Tin Toy](movie_title)
+    - pls get me some film so called [Iceman](movie_title) thanks
+    - hello please help me find film named [The Man Who Would Be King](movie_title) thank you
+    - hey please show me film named [Black Sunday](movie_title) thanks
+    - hi please tell me about film called [One Night at McCool's](movie_title) thanks
+    - hey help me find movie so called [Diamantino](movie_title)
+
+
+- intent: random_movie
+  examples: |
+    - show me some options
+    - what movies do you have?
+    - give me some ramdom movies
+
+
+- intent: check_date
+  examples: |
+    - when did this movie came out?
+    - what is thie movie's release date?
+
+
+- intent: check_rate
+  examples: |
+    - how good is this movie?
+    - is this movie good?
+    - how much rate did it get?
+    - do people like this movie?
+    - how many people rated this movie?
+
+
+- intent: mark_watched
+  examples: |
+    - I have seen this one
+    - I have watched this one before
+    - I watched this one before
+
+- intent: mark_rate
+  examples: |
+    - [10](movie_personal_rate)
+    - [9](movie_personal_rate)
+    - [8](movie_personal_rate)
+    - [7](movie_personal_rate)
+    - [6](movie_personal_rate)
+    - [5](movie_personal_rate)
+    - [4](movie_personal_rate)
+    - [3](movie_personal_rate)
+    - [2](movie_personal_rate)
+    - [1](movie_personal_rate)
+    - [0](movie_personal_rate)
+
+- intent: mark_unwatched
+  examples: |
+    - I haven't seen this one
+    - I haven't watched this one before
+    - I never watched this one
+
+
+- intent: list_watched_movies
+  examples: |
+    - how many movies did i watched?
+    - what are the movies i have watched?

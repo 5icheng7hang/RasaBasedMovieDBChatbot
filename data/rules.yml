@@ -1,0 +1,57 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: search movie by title
+  steps:
+  - intent: search_by_title
+  - action: action_by_title_search
+
+- rule: search movie by genre
+  steps:
+  - intent: search_by_genre
+  - action: action_by_genre_search
+
+- rule: get random movies
+  steps:
+  - intent: random_movie
+  - action: action_give_random_movies
+
+- rule: check date
+  steps:
+  - intent: check_date
+  - action: action_check_date
+
+- rule: check rate
+  steps:
+  - intent: check_rate
+  - action: action_check_rate
+
+- rule: mark rate
+  steps:
+  - intent: mark_rate
+  - action: action_mark_rate
+
+- rule: mark unwatched
+  steps:
+  - intent: mark_unwatched
+  - action: action_mark_unwatched
+
+- rule: list_watched_movies
+  steps:
+  - intent: list_watched_movies
+  - action: action_list_watched_movies
+
+
+
+  
